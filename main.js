@@ -89,7 +89,7 @@ input.addEventListener('input', function (e) {
     auto_grow(e.target);
 });
 input.addEventListener('keypress', function(e) {
-    if(e.ctrlKey && e.keyCode === 10) {
+    if(e.ctrlKey && e.code === 'Enter') {
         run(ss_to_bf(input.value));
     }
 })
