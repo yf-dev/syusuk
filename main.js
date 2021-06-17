@@ -88,4 +88,9 @@ run_button.addEventListener('click', function () {
 input.addEventListener('input', function (e) {
     auto_grow(e.target);
 });
+input.addEventListener('keypress', function(e) {
+    if(e.ctrlKey && e.keyCode === 10) {
+        run(ss_to_bf(input.value));
+    }
+})
 auto_grow(input);
